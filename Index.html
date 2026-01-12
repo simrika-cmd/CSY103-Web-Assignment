@@ -12,6 +12,7 @@
   <nav class="navbar">
     <h1 class="logo">My Portfolio</h1>
 
+  <button class="hamburger" id="hamburger">☰</button>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -25,11 +26,23 @@
 
 <main class="home">
   <section>
-    <h2>Hi, I’m simrika</h2>
-    <p>Welcome to my portfolio website where I showcase my web development work.</p>
+    <h2>Hi, I am simrika</h2>
+    <p>Welcome to my portfolio website where I showcase my web development work. </p>
   </section>
 </main>
 
 <footer>
   <p>© 2026 My Portfolio</p>
 </footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
