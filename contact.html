@@ -12,6 +12,7 @@
   <nav class="navbar">
     <h1 class="logo">My Portfolio</h1>
 
+    <button class="hamburger" id="hamburger">☰</button>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -27,14 +28,14 @@
 
         <h1>Contact Me</h1>
 
-        <!-- Contact Information -->
+        
         <div class="contact-info">
             <p><strong>Name:</strong> Simrika</p>
             <p><strong>Email:</strong> Simrika@example.com</p>
             <p><strong>Phone:</strong> 9800000000</p>
         </div>
 
-        <!-- Contact Form -->
+        
         <form action="mailto:Simrika@example.com" method="post" enctype="text/plain">
 
             <label for="name">Your Name:</label>
@@ -51,6 +52,20 @@
         </form>
 
     </div>
+
+    <footer>
+     <p>© 2026 My Portfolio</p>
+    </footer>
+
+
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
