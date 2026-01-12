@@ -12,6 +12,7 @@
   <nav class="navbar">
     <h1 class="logo">My Portfolio</h1>
 
+    <button class="hamburger" id="hamburger">☰</button>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -42,3 +43,19 @@ other peoples too as for responsiveness it helped me on layouts including the ph
  Overall , I learned various things about websites. This web development has help me understand about layouts , designs and others.
  I also have improved on coding, problem solvings and styling. I have gained more skills on coding as well as it developed my
  knowledge on basic codes and debugs.
+
+  <footer>
+  <p>© 2026 My Portfolio</p>
+  </footer>
+
+ 
+ <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
