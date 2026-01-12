@@ -12,6 +12,7 @@
   <nav class="navbar">
     <h1 class="logo">My Portfolio</h1>
 
+    <button class="hamburger" id="hamburger">☰</button>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -26,8 +27,6 @@
 
     <style>
     </style>
-</head>
-<body>
 
     <h1>Video Demonstration</h1>
 
@@ -36,7 +35,7 @@
         The video explains the purpose of the site and shows how each page works.
     </p>
 
-    <!-- Embedded Video -->
+  
     <div class="video-container">
         <iframe 
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -45,10 +44,23 @@
         </iframe>
     </div>
 
-    <!-- Backup Link (Good practice for marks) -->
     <a class="video-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
         Click here if the video does not load
     </a>
+    
+    <footer>
+  <p>© 2026 My Portfolio</p>
+  </footer>
+
+
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
